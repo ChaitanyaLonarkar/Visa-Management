@@ -2,11 +2,24 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import Navbar from "./components/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <>
+      <BrowserRouter>
+      <Navbar />
+      <Routes>
+          {/* <Route index element={<Home />} /> */}
+          {/* <Route path="order" element={<Blogs />} /> */}
+          {/* <Route path="documents" element={<Contact />} /> */}
+      </Routes>
+    </BrowserRouter>
+    </>
+  );
 }
 
 export default App;
