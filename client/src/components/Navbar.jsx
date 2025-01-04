@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isactive, setIsactive] = useState(false);
+  const active = useRef();
 
+  const setActive=()=>{
+    active.current.classList.add("active");
+  }
   return (
     <>
       <div className="flex flex-row max-[835px]:justify-between items-center py-4 max-[835px]:p-4 px-16 bg-white border-2   text-gray-800 max-[835px]:h-14 h-20 ">
@@ -17,16 +21,21 @@ export default function Navbar() {
           <div className="navigation   flex font-medium gap-6 items-center">
             <Link
               to="/"
-              className=" hover:text-sky-600 transition-all px-2 py-1  {isActive && active} "
+              className=" hover:text-sky-600 transition-all px-2 py-1   "
+              ref={active}
+              onClick={setActive}
             >
               Home
             </Link>
-            <Link to="/order" className=" hover:text-sky-600 transition-all {isActive && active}">
+            <Link to="/order" className=" hover:text-sky-600 transition-all " ref={active}
+              onClick={setActive}>
               Order
             </Link>
             <Link
               to="/documents"
-              className=" hover:text-sky-600 transition-all {isActive && active}"
+              className=" hover:text-sky-600 transition-all "
+              ref={active}
+              onClick={setActive}
             >
               Documents
             </Link>
