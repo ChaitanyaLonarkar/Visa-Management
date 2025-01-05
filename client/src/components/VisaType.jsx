@@ -1,6 +1,7 @@
 import React from "react";
 import { RxExclamationTriangle } from "react-icons/rx";
 import {Link} from "react-router-dom";
+import Accordian from "./Accordian";
 export default function VisaType() {
   return (
     <>
@@ -53,8 +54,8 @@ export default function VisaType() {
                 </tbody>
               </table>
             </div>
-            <div className="">
-                
+            <div className="Accordian">
+                <Accordian/>
             </div>
           </div>
         </div>
