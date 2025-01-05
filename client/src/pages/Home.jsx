@@ -63,14 +63,9 @@ export default function Home() {
           </div>
         </div>
         {/* right side  */}
-        <div className="right-side w-[75%] bg-white rounded-md p-8 px-12 flex flex-col gap-8">
-          <div className="head">
-            <h1 className="font-bold text-2xl text-slate-800">Add itinerary</h1>
-          </div>
-          <div className="form">
+        
             <Form />
-          </div>
-        </div>
+          
       </div>
     </>
   );
