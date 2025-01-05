@@ -4,9 +4,9 @@ import Form from "../components/Form.jsx";
 export default function Home() {
   return (
     <>
-      <div className=" home flex py-8 px-14 max-[835px]:flex-col max-[835px]:p-4 gap-2 max-[835px]:gap-4 ">
+      <div className=" home h-[85vh] flex py-8 px-14 max-[835px]:flex-col max-[835px]:p-4 gap-2 max-[835px]:gap-4 ">
         {/* left side  */}
-        <div className="left-side  flex flex-col gap-8 w-[25%] h-fit bg-white rounded-md p-6 ">
+        <div className="left-side  flex flex-col gap-8 w-[25%]  bg-white rounded-md p-8 ">
           <div className="flex flex-col gap-2">
             <h1 className="font-bold text-2xl text-slate-800">
               Are You Applying For
@@ -63,7 +63,7 @@ export default function Home() {
           </div>
         </div>
         {/* right side  */}
-        <div className="right-side w-[75%] bg-white rounded-md p-6 px-12 flex flex-col gap-4">
+        <div className="right-side w-[75%] bg-white rounded-md p-8 px-12 flex flex-col gap-8">
           <div className="head">
             <h1 className="font-bold text-2xl text-slate-800">Add itinerary</h1>
           </div>
