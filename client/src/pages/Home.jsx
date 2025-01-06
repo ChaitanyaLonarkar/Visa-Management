@@ -1,6 +1,7 @@
 import React from "react";
 import Form from "../components/Form.jsx";
 import VisaType from "../components/VisaType.jsx";
+import Document from "../components/Document.jsx";
 
 export default function Home() {
   return (
@@ -66,7 +67,8 @@ export default function Home() {
         {/* right side  */}
         
           {/* <Form /> */}
-          <VisaType/>
+          {/* <VisaType/> */}
+          <Document/>
       </div>
     </>
   );

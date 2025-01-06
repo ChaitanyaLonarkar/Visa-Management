@@ -88,7 +88,7 @@ export default function VisaType() {
           <div className="body rounded-lg bg-white pt-6 pb-2 mt-5 flex flex-col gap-4">
             <div className="flex gap-2 ps-5 items-center text-sm ">
               <FaCalendarCheck className="text-xl text-sky-600" />
-              Estimated visa arrival by{" "}
+              Estimated visa arrival by
               <span className="text-cyan-600">8th Jan, 2025</span>
             </div>
             <div className="table">
