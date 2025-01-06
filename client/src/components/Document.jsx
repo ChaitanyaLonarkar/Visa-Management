@@ -16,7 +16,7 @@ export default function Document() {
         {/* body */}
         <div className="body flex gap-7">
           {/* left */}
-          <div className="doc-left w-[70%]">
+          <div className="doc-left w-[67%]">
             <div className="doc-left-head flex gap-4 items-center justify-between border-b-2 py-3">
               <h2 className="text-xl text-slate-700 font-semibold">
                 Documents Requirement
@@ -322,13 +322,13 @@ export default function Document() {
                   </li>
                   <li>Employment proof of the sponsor.</li>
 
-                <li>Bank-statement of the sponsor.</li>
-                <li>
-                  Government ID proof (Passport, Driving license, PAN card) of
-                  the sponsor if the sponsor is from India (or) If the sponsor
-                  is from Switzerland, then passport/driving license copy of the
-                  sponsor
-                </li>
+                  <li>Bank-statement of the sponsor.</li>
+                  <li>
+                    Government ID proof (Passport, Driving license, PAN card) of
+                    the sponsor if the sponsor is from India (or) If the sponsor
+                    is from Switzerland, then passport/driving license copy of
+                    the sponsor
+                  </li>
                 </ul>
                 <div className="list-title font-semibold text-slate-900 text-[18px]">
                   Internal travel
@@ -357,9 +357,32 @@ export default function Document() {
             </div>
           </div>
           {/* right */}
-          <div className="doc-right w-[30%]">
-            <PaymentCard/>
-
+          <div className="doc-right w-[33%]">
+            <PaymentCard />
+            <div className="list-count flex flex-col gap-3 mt-10">
+                {/* <div className="w-[20%] h-5 bg-slate-700 "></div>
+                <hr class="w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr> */}
+              <div className=" flex  justify-between text-gray-500 font-medium">
+                <p >1. Country </p>
+                <span className="font-semibold text-gray-700">Australia</span>
+              </div>
+              <div className=" flex  justify-between text-gray-500 font-medium">
+                <p>2. No. of travellers</p>
+                <span className="font-semibold text-gray-700">1 Traveller</span>
+              </div><div className=" flex  justify-between text-gray-500 font-medium">
+                <p>3. Travel Dates</p>
+                <span className="font-semibold text-gray-700">9 Dec - 27 Dec</span>
+              </div><div className=" flex  justify-between text-gray-500 font-medium">
+                <p>4. Visa Type</p>
+                <span className="font-semibold text-gray-700">Tourist Visa</span>
+              </div><div className=" flex  justify-between text-gray-500 font-medium">
+                <p>5. Duration</p>
+                <span className="font-semibold text-gray-700">90 Days</span>
+              </div><div className=" flex  justify-between text-gray-500 font-medium">
+                <p>6. Validity</p>
+                <span className="font-semibold text-gray-700">Decided by Embassy</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
