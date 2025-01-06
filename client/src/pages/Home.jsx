@@ -5,9 +5,9 @@ import VisaType from "../components/VisaType.jsx";
 export default function Home() {
   return (
     <>
-      <div className=" home h-[85vh] flex py-8 px-14 max-[835px]:flex-col max-[835px]:p-4 gap-2 max-[835px]:gap-4 ">
+      <div className=" home h-full flex py-8 px-14 max-[835px]:flex-col max-[835px]:p-4 gap-2 max-[835px]:gap-4 ">
         {/* left side  */}
-        <div className="left-side  flex flex-col gap-8 w-[25%]  bg-white rounded-md p-8 ">
+        <div className="left-side h-[80vh] flex flex-col gap-8 w-[25%]  bg-white rounded-md p-8 ">
           <div className="flex flex-col gap-2">
             <h1 className="font-bold text-2xl text-slate-800">
               Are You Applying For

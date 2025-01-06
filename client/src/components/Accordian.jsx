@@ -1,7 +1,7 @@
 // 
 import React, { useState } from "react";
 
-const Accordian = () => {
+export default function Accordian()  {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = () => {
@@ -9,19 +9,19 @@ const Accordian = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto mt-10">
+    <div className=" mx-auto mt-3">
       <div
-        className="bg-blue-500 text-white px-4 py-3 flex justify-between items-center cursor-pointer rounded-t-md"
+        className="bg-blue-500 text-white px-4 py-3 flex justify-between items-center cursor-pointer rounded-lg"
         onClick={toggleAccordion}
       >
-        <h3 className="text-lg font-semibold">Important Points to Note</h3>
+        <h3 className=" font-semibold">Important Points to Note</h3>
         <span className="text-white transform transition-transform duration-300">
           {isOpen ? "▲" : "▼"}
         </span>
       </div>
       {isOpen && (
-        <div className="bg-gray-100 px-6 py-4 border border-t-0 rounded-b-md">
-          <ul className="list-disc list-inside text-gray-800">
+        <div className=" px-8 py-4 ">
+          <ul className="list-disc list-inside flex flex-col gap-2 text-gray-800">
             <li>
               The processing time will start from the time of submission of the
               application.
@@ -36,7 +36,8 @@ const Accordian = () => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Accordian();
+
+
