@@ -1,5 +1,6 @@
 import React from "react";
 import { IoMdShare } from "react-icons/io";
+import PaymentCard from "./PaymentCard";
 export default function Document() {
   return (
     <>
@@ -13,7 +14,7 @@ export default function Document() {
           </button>
         </div>
         {/* body */}
-        <div className="body flex gap-4">
+        <div className="body flex gap-7">
           {/* left */}
           <div className="doc-left w-[70%]">
             <div className="doc-left-head flex gap-4 items-center justify-between border-b-2 py-3">
@@ -356,7 +357,10 @@ export default function Document() {
             </div>
           </div>
           {/* right */}
-          <div className="doc-right bg-slate-300 w-[30%]"></div>
+          <div className="doc-right w-[30%]">
+            <PaymentCard/>
+
+          </div>
         </div>
       </div>
     </>
