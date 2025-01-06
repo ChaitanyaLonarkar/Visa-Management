@@ -2,6 +2,8 @@ import React from "react";
 import { RxExclamationTriangle } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import Accordian from "./Accordian";
+import { FaCalendarCheck } from "react-icons/fa";
+
 export default function VisaType() {
   return (
     <>
@@ -15,7 +17,7 @@ export default function VisaType() {
           </button>
         </div>
         {/* Appoinment Card 1 */}
-        <div className="AppoinmentCard rounded-lg bg-gray-200 w-full px-7 py-5">
+        <div className="AppoinmentCard rounded-lg bg-[#E7E7E7] w-full px-7 py-5">
           <div className="card-head flex justify-between items-center">
             <h2 className="text-lg text-slate-800 font-semibold">
               Schengen Appointment and Documentation b2b
@@ -24,15 +26,15 @@ export default function VisaType() {
               Apply &#11106;
             </button>
           </div>
-          <div className="body rounded-lg bg-white p-6 mt-5 flex flex-col gap-4">
-            <div className="flex gap-2 items-center text-sm text-yellow-700">
+          <div className="body rounded-lg bg-white pt-6 pb-2 mt-5 flex flex-col gap-4">
+            <div className="flex gap-2 ps-5 items-center text-sm text-yellow-700">
               <RxExclamationTriangle className="text-xl" />
               Your visa will not come in time before your departure date. Your
-              visa will be delivered on 20th Jan, 2025
+              visa will be delivered on 20th Jan, 2025
             </div>
             <div className="table">
               <table className="table-auto text-left text-sm w-full text-gray-800   ">
-                <thead className="w-full bg-gradient-to-r from-gray-300  ">
+                <thead className="w-full border-s-2 border-s-black bg-gradient-to-r from-gray-300  ">
                   <tr className=" ">
                     <th scope="col" className=" font-semibold px-4 py-3">
                       Entry
@@ -68,30 +70,30 @@ export default function VisaType() {
                 </tbody>
               </table>
             </div>
-            <div className="Accordian">
-              <Accordian />
-            </div>
+          </div>
+          <div className="Accordian">
+            <Accordian />
           </div>
         </div>
         {/* Appoinment Card 2 */}
-        <div className="AppoinmentCard rounded-lg bg-gray-200 w-full px-7 py-5">
+        <div className="AppoinmentCard rounded-lg bg-[#E7E7E7] w-full px-7 py-5">
           <div className="card-head flex justify-between items-center">
             <h2 className="text-lg text-slate-800 font-semibold">
-              Schengen Appointment and Documentation b2b
+              Schengen Appointment b2b
             </h2>
             <button className="bg-blue-500 transition-all hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded ">
               Apply &#11106;
             </button>
           </div>
-          <div className="body rounded-lg bg-white p-6 mt-5 flex flex-col gap-4">
-            <div className="flex gap-2 items-center text-sm text-yellow-700">
-              <RxExclamationTriangle className="text-xl" />
-              Your visa will not come in time before your departure date. Your
-              visa will be delivered on 20th Jan, 2025
+          <div className="body rounded-lg bg-white pt-6 pb-2 mt-5 flex flex-col gap-4">
+            <div className="flex gap-2 ps-5 items-center text-sm ">
+              <FaCalendarCheck className="text-xl text-sky-600" />
+              Estimated visa arrival by{" "}
+              <span className="text-cyan-600">8th Jan, 2025</span>
             </div>
             <div className="table">
               <table className="table-auto text-left text-sm w-full text-gray-800   ">
-                <thead className="w-full bg-gradient-to-r from-gray-300  ">
+                <thead className="w-full border-s-2 border-s-black bg-gradient-to-r from-gray-300  ">
                   <tr className=" ">
                     <th scope="col" className=" font-semibold px-4 py-3">
                       Entry
@@ -127,30 +129,30 @@ export default function VisaType() {
                 </tbody>
               </table>
             </div>
-            <div className="Accordian">
-              <Accordian />
-            </div>
+          </div>
+          <div className="Accordian">
+            <Accordian />
           </div>
         </div>
-        {/* Appoinment Card 2 */}
-        <div className="AppoinmentCard rounded-lg bg-gray-200 w-full px-7 py-5">
+        {/* Appoinment Card 3 */}
+        <div className="AppoinmentCard rounded-lg bg-[#E7E7E7] w-full px-7 py-5">
           <div className="card-head flex justify-between items-center">
             <h2 className="text-lg text-slate-800 font-semibold">
-              Schengen Appointment and Documentation b2b
+              Schengen Appointment b2b
             </h2>
             <button className="bg-blue-500 transition-all hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded ">
               Apply &#11106;
             </button>
           </div>
-          <div className="body rounded-lg bg-white p-6 mt-5 flex flex-col gap-4">
-            <div className="flex gap-2 items-center text-sm text-yellow-700">
-              <RxExclamationTriangle className="text-xl" />
-              Your visa will not come in time before your departure date. Your
-              visa will be delivered on 20th Jan, 2025
+          <div className="body rounded-lg bg-white pt-6 pb-2 mt-5 flex flex-col gap-4">
+            <div className="flex gap-2 ps-5 items-center text-sm ">
+              <FaCalendarCheck className="text-xl text-sky-600" />
+              Estimated visa arrival by
+              <span className="text-cyan-600">8th Jan, 2025</span>
             </div>
             <div className="table">
               <table className="table-auto text-left text-sm w-full text-gray-800   ">
-                <thead className="w-full bg-gradient-to-r from-gray-300  ">
+                <thead className="w-full border-s-2 border-s-black bg-gradient-to-r from-gray-300  ">
                   <tr className=" ">
                     <th scope="col" className=" font-semibold px-4 py-3">
                       Entry
@@ -186,9 +188,9 @@ export default function VisaType() {
                 </tbody>
               </table>
             </div>
-            <div className="Accordian">
-              <Accordian />
-            </div>
+          </div>
+          <div className="Accordian">
+            <Accordian />
           </div>
         </div>
       </div>
