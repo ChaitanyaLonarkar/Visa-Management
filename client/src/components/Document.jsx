@@ -276,7 +276,7 @@ export default function Document() {
                     residing in Switzerland.
                   </li>
                 </ul>
-                <div className="list-title font-semibold text-slate-900 text-xl">
+                <div className="list-title font-semibold text-slate-900 text-[18px]">
                   Minor Travelling Alone
                 </div>
                 <ul className=" ps-3 list-disc text-[14px] list-inside flex flex-col gap-1 text-gray-800">
@@ -296,7 +296,7 @@ export default function Document() {
                     residing in Switzerland.
                   </li>
                 </ul>
-                <div className="list-title font-semibold text-slate-900 text-xl">
+                <div className="list-title font-semibold text-slate-900 text-[18px]">
                   Staying with friends and family
                 </div>
                 <ul className=" ps-3 list-disc text-[14px] list-inside flex flex-col gap-1 text-gray-800">
@@ -311,7 +311,7 @@ export default function Document() {
                     with the address proof
                   </li>
                 </ul>
-                <div className="list-title font-semibold text-slate-900 text-xl">
+                <div className="list-title font-semibold text-slate-900 text-[18px]">
                   Sponsor documents
                 </div>
                 <ul className=" ps-3 list-disc text-[14px] list-inside flex flex-col gap-1 text-gray-800">
@@ -329,7 +329,7 @@ export default function Document() {
                   sponsor
                 </li>
                 </ul>
-                <div className="list-title font-semibold text-slate-900 text-xl">
+                <div className="list-title font-semibold text-slate-900 text-[18px]">
                   Internal travel
                 </div>
                 <ul className=" ps-3 list-disc text-[14px] list-inside flex flex-col gap-1 text-gray-800">
@@ -343,7 +343,7 @@ export default function Document() {
                     with the address proof
                   </li>
                 </ul>
-                <div className="list-title font-semibold text-slate-900 text-xl">
+                <div className="list-title font-semibold text-slate-900 text-[18px]">
                   Marriage certificate
                 </div>
                 <ul className=" ps-3 list-disc text-[14px] list-inside flex flex-col gap-1 text-gray-800">
