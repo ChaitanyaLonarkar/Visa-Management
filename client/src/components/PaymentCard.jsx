@@ -6,7 +6,7 @@ export default function PaymentCard() {
   const [feesTaxesOpen, setFeesTaxesOpen] = useState(false);
   return (
     <>
-      <div className="payment-card p-6 border-2 border-gray-200 rounded-xl">
+      <div className="payment-card p-6 border-2 border-gray-200 rounded-xl ">
         <h2 className="heading text-xl font-semibold border-b-2 border-gray-200 pb-3 mb-4">
           Payment details
         </h2>
@@ -14,10 +14,10 @@ export default function PaymentCard() {
         {/* Visa Fee Accordion */}
         <div className="mb-3">
           <div
-            className="flex justify-between text-[15px] items-center cursor-pointer py-2"
+            className="flex justify-between text-[16px] items-center cursor-pointer py-2"
             onClick={() => setVisaFeeOpen(!visaFeeOpen)}
           >
-            <h3 className="font-medium text-gray-700">Visa Fee (1)</h3>
+            <h3 className="font-semibold text-gray-800">Visa Fee (1)</h3>
             <span className="text-gray-600">{visaFeeOpen ? "▲" : "▼"}</span>
             <p className="font-semibold text-gray-800">₹ 11,600</p>
           </div>
@@ -31,10 +31,10 @@ export default function PaymentCard() {
         {/* Fees & Taxes Accordion */}
         <div>
           <div
-            className="flex justify-between items-center text-[15px]  cursor-pointer py-2"
+            className="flex justify-between items-center text-[16px]  cursor-pointer py-2"
             onClick={() => setFeesTaxesOpen(!feesTaxesOpen)}
           >
-            <h3 className="font-medium text-gray-700">Fees & Taxes</h3>
+            <h3 className="font-semibold text-gray-800">Fees & Taxes</h3>
             <span className="text-gray-600">{feesTaxesOpen ? "▲" : "▼"}</span>
             <p className="font-semibold text-gray-800">₹ 1,180</p>
           </div>
