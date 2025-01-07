@@ -3,7 +3,8 @@ import { FaRegCircle } from "react-icons/fa";
 import { FaRegDotCircle } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
- 
+import { useLocation } from "react-router-dom";
+
 // const obj = {
 //   pending: {
 //     dot_div: <FaRegCircle className="text-3xl text-sky-500 bg-gray-200 rounded-full " />,
@@ -32,6 +33,8 @@ import { Link } from "react-router-dom";
 // };
 
 export default function Sidebar() {
+  const location = useLocation();
+  // location.pathname === "/visa_type"
   return (
     <>
       <div className="left-side h-[80vh] flex flex-col gap-8 w-[25%]  bg-white rounded-md p-8 ">
@@ -52,9 +55,24 @@ export default function Sidebar() {
         </div>
         <div className="flex gap-4">
           <div className="left flex flex-col gap-4 items-center justify-around">
-            <FaRegCircle className="text-3xl text-sky-500 bg-gray-200 rounded-full " />
-            <FaRegDotCircle className="text-3xl text-sky-500 bg-gray-200 rounded-full " />
-            <FaCheckCircle className="text-3xl text-green-500 " />
+            {location.pathname === "/" ? (
+              <FaRegDotCircle className="text-3xl text-sky-500 bg-gray-200 rounded-full " />
+            ) : (
+              <FaRegCircle className="text-3xl text-sky-500 bg-gray-200 rounded-full " />
+            )}
+            {location.pathname === "/visa_type" ? (
+              <FaRegDotCircle className="text-3xl text-sky-500 bg-gray-200 rounded-full " />
+            ) : (
+              <FaRegCircle className="text-3xl text-sky-500 bg-gray-200 rounded-full " />
+            )}
+            {location.pathname === "/document_require" ? (
+              <FaRegDotCircle className="text-3xl text-sky-500 bg-gray-200 rounded-full " />
+            ) : (
+              <FaRegCircle className="text-3xl text-sky-500 bg-gray-200 rounded-full " />
+            )}
+            {/* <FaRegCircle className="text-3xl text-sky-500 bg-gray-200 rounded-full " />
+            <FaRegDotCircle className="text-3xl text-sky-500 bg-gray-200 rounded-full " /> */}
+            {/* <FaCheckCircle className="text-3xl text-green-500 " /> */}
           </div>
           <div className="right flex flex-col gap-8">
             <div className="flex flex-col gap-2">
@@ -68,7 +86,10 @@ export default function Sidebar() {
               </div>
             </div>
             <div className="flex flex-col gap-2">
-              <Link to={"/visa_type"} className="text-xl text-slate-700 font-bold">
+              <Link
+                to={"/visa_type"}
+                className="text-xl text-slate-700 font-bold"
+              >
                 Choose Visa Type
               </Link>
               <div>
@@ -78,7 +99,10 @@ export default function Sidebar() {
               </div>
             </div>
             <div className="flex flex-col gap-2">
-              <Link to={"/document_require"} className="text-xl text-slate-700 font-bold">
+              <Link
+                to={"/document_require"}
+                className="text-xl text-slate-700 font-bold"
+              >
                 Documents Require
               </Link>
               <div>
