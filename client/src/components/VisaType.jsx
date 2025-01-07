@@ -1,7 +1,7 @@
 import React from "react";
 import { RxExclamationTriangle } from "react-icons/rx";
 import { Link } from "react-router-dom";
-import Accordian from "./Accordian";
+import Accordian from "../components/Accordian";
 import { FaCalendarCheck } from "react-icons/fa";
 
 export default function VisaType() {

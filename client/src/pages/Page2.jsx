@@ -1,9 +1,8 @@
 import React from "react";
-import Form from "../components/Form.jsx";
-
+import VisaType from "../components/VisaType";
 import Sidebar from "../components/Sidebar.jsx";
 
-export default function Home() {
+export default function Page2() {
   return (
     <>
       <div className=" home h-full flex py-8 px-14 max-[835px]:flex-col max-[835px]:p-4 gap-2 max-[835px]:gap-4 ">
@@ -11,9 +10,7 @@ export default function Home() {
         <Sidebar />
         {/* right side  */}
 
-        <Form />
-        {/* <VisaType/> */}
-        {/* <Document /> */}
+        <VisaType />
       </div>
     </>
   );
