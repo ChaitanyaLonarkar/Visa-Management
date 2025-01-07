@@ -70,9 +70,6 @@ export default function Sidebar() {
             ) : (
               <FaRegCircle className="text-3xl text-sky-500 bg-gray-200 rounded-full " />
             )}
-            {/* <FaRegCircle className="text-3xl text-sky-500 bg-gray-200 rounded-full " />
-            <FaRegDotCircle className="text-3xl text-sky-500 bg-gray-200 rounded-full " /> */}
-            {/* <FaCheckCircle className="text-3xl text-green-500 " /> */}
           </div>
           <div className="right flex flex-col gap-8">
             <div className="flex flex-col gap-2">
@@ -80,9 +77,15 @@ export default function Sidebar() {
                 Add Itinerary
               </Link>
               <div>
-                <button className="btn  bg-blue-200 text-slate-800 text-xs flex rounded-full py-1 px-4 text-center">
-                  In Progress
-                </button>
+                {location.pathname === "/" ? (
+                  <button className="btn border-2 border-blue-200 bg-blue-200 text-slate-800 text-xs flex rounded-full py-1 px-4 text-center">
+                    In Progress
+                  </button>
+                ) : (
+                  <button className="btn border-2 border-slate-200 text-slate-600 text-xs rounded-full py-1 px-4 text-center">
+                    Pending
+                  </button>
+                )}
               </div>
             </div>
             <div className="flex flex-col gap-2">
@@ -93,9 +96,15 @@ export default function Sidebar() {
                 Choose Visa Type
               </Link>
               <div>
-                <button className="btn border-2 border-slate-200 text-slate-600 text-xs rounded-full py-1 px-4 text-center">
-                  Pending
-                </button>
+                {location.pathname === "/visa_type" ? (
+                  <button className="btn border-2 border-blue-200 bg-blue-200 text-slate-800 text-xs flex rounded-full py-1 px-4 text-center">
+                    In Progress
+                  </button>
+                ) : (
+                  <button className="btn border-2 border-slate-200 text-slate-600 text-xs rounded-full py-1 px-4 text-center">
+                    Pending
+                  </button>
+                )}
               </div>
             </div>
             <div className="flex flex-col gap-2">
@@ -106,9 +115,15 @@ export default function Sidebar() {
                 Documents Require
               </Link>
               <div>
-                <button className="btn  border-2 border-slate-200 text-slate-600 text-xs rounded-full py-1 px-4 text-center">
-                  Pending
-                </button>
+                {location.pathname === "/document_require" ? (
+                  <button className="btn btn border-2 border-blue-200 bg-blue-200 text-slate-800 text-xs flex rounded-full py-1 px-4 text-center">
+                    In Progress
+                  </button>
+                ) : (
+                  <button className="btn border-2 border-slate-200 text-slate-600 text-xs rounded-full py-1 px-4 text-center">
+                    Pending
+                  </button>
+                )}
               </div>
             </div>
           </div>
