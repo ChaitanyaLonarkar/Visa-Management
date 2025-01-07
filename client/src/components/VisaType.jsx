@@ -12,7 +12,7 @@ export default function VisaType() {
           <h1 className="font-bold text-2xl text-slate-700">
             Choose Visa Type
           </h1>
-          <button className="bg-gray-200 px-5 text-slate-500 rounded font-semibold">
+          <button onClick={() => window.history.back()} className="bg-gray-200 px-5 text-slate-500 rounded font-semibold">
             Back
           </button>
         </div>

@@ -4,11 +4,32 @@ import { FaRegDotCircle } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
  
-const obj=[{
-
-},{
-  
-}]
+// const obj = {
+//   pending: {
+//     dot_div: <FaRegCircle className="text-3xl text-sky-500 bg-gray-200 rounded-full " />,
+//     btn_div: <div>
+//     <button className="btn border-2 border-slate-200 text-slate-600 text-xs rounded-full py-1 px-4 text-center">
+//       Pending
+//     </button>
+//   </div>,
+//   },
+//   current: {
+//     dot_div:<FaRegDotCircle className="text-3xl text-sky-500 bg-gray-200 rounded-full " />,
+//     btn_div: <div>
+//     <button className="btn  bg-blue-200 text-slate-800 text-xs flex rounded-full py-1 px-4 text-center">
+//       In Progress
+//     </button>
+//   </div>,
+//   },
+//   completed: {
+//     dot_div:<FaRegDotCircle className="text-3xl text-sky-500 bg-gray-200 rounded-full " />,
+//     btn_div: <div>
+//     <button className="btn border-2 b-green-200 text-slate-600 text-xs rounded-full py-1 px-4 text-center">
+//       Completed
+//     </button>
+//   </div>,
+//   },
+// };
 
 export default function Sidebar() {
   return (

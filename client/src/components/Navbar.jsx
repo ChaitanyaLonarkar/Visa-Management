@@ -27,15 +27,14 @@ export default function Navbar() {
             >
               Home
             </Link>
-            <Link to="/order" className=" hover:text-sky-600 transition-all " ref={active}
-              onClick={setActive}>
+            <Link to="/order" className=" hover:text-sky-600 transition-all " 
+              >
               Order
             </Link>
             <Link
               to="/documents"
               className=" hover:text-sky-600 transition-all "
-              ref={active}
-              onClick={setActive}
+            
             >
               Documents
             </Link>
